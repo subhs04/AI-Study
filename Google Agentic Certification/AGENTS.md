@@ -6,6 +6,14 @@ You are my study assistant for Google Cloud's **Professional Agentic Architect**
 - I prefer concise, structured, example-driven explanations with explicit cross-checks over high-level summaries or exhaustive lists.
 - I study through the Google Cloud partner skills path (26 activities; see `roadmap.md`). The certification is new and outside resources are limited.
 
+# Phases (current: Phase 1, MCQ only)
+The certification has two parts: a proctored MCQ exam, then hands-on labs on Google Skills (format per web search; verify on the official certification page). I am on a tight schedule and sequence them:
+- **Phase 1 (now): pass the MCQ exam.** Only theory/architecture material is in scope. Prioritize by exam weight and by objectives not yet covered.
+- **Phase 2 (after passing the MCQ): the hands-on lab part.** Not started until I say "start Phase 2".
+- **Lab material is parked in Phase 1.** Do NOT read, process, summarize, or write notes from lab documentation: folders or files named "... Lab", "... Challenge Lab", skill badges, `.zip` starter code, or anything under a `labs/` subfolder. Do not use them to fill objective gaps or cross-check notes. Only list them (name + objectives they will touch, from their title) in the tracker's Phase 2 section.
+- Lab-only objectives still count for the MCQ. If an objective's content lives only in a parked lab, report it as an MCQ gap and suggest a theory source (course reading, official docs). Do not open the lab to fill it.
+- Quizzes (`quiz.md`) and transcripts of theory courses are NOT labs and stay in scope.
+
 # Repository conventions
 - This folder is a subfolder of the git repo `AI-Study`. Do not touch files outside it. Only commit when I ask.
 - Ignore the PDF exam guide. **`exam-guide.md` is the source of truth for objective IDs** (1.1 ... 5.2), scope and in-scope tools. `roadmap.md` is my course prioritization (its objective mappings came from Gemini and are unverified; check them against `exam-guide.md`).
@@ -15,7 +23,7 @@ You are my study assistant for Google Cloud's **Professional Agentic Architect**
   ├── sources/       raw.md (faithful capture), quiz.md, transcript.md, etc. Read-only inputs, never rewrite them
   └── notes/         certification-ready notes, one concept-focused file per topic
   ```
-- Notes are **small, targeted files** (roughly one concept cluster each, split when a file gets long) rather than one big file per module. Name by topic, e.g. `notes/serving-controls.md`. No numeric prefixes.
+- Notes are **small, targeted files** (roughly one concept cluster each, split when a file gets long) rather than one big file per module. Name by topic with a **two-digit study-order prefix** that is ascending within the module, e.g. `notes/01-agentops-lifecycle.md`, `notes/02-build-and-scale-platform.md`. The number is the order I should read them in (prerequisites first), starting at `01` per module. Rules: (a) order by learning dependency, not by source order; (b) when adding a note to an existing module, give it the right slot and renumber the others if needed, updating every cross-reference, "Next notes" line, and the tracker; (c) never leave gaps or duplicate numbers; (d) a module overview/mindmap note, if any, is `01`. Existing unprefixed notes are renamed only when I ask or when that module is next revised.
 - Root files: `00-coverage-tracker.md`, `roadmap.md`, `exam-guide.md`.
 - If a note already exists, update it. Never create a duplicate.
 - Update `00-coverage-tracker.md` every time a module's notes are added or revised.

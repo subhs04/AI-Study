@@ -1,12 +1,13 @@
-The browser agent extracted the syllabus for [**Understand Google Cloud Agents**](https://partner.skills.google/paths/4531/course_sessions/46768137/documents/689367). It covers CX Agent Studio, Gemini Enterprise, the Agent Development Kit (ADK), and security frameworks. Because it touches Sections 1, 3, and 5 of the exam guide, it acts as a foundational prerequisite and belongs in the Must Do bucket.  
+The browser agent extracted the syllabus for [**Understand Google Cloud Agents**](https://partner.skills.google/paths/4531/course_sessions/46768137/documents/689367). It covers CX Agent Studio, Gemini Enterprise, the Agent Development Kit (ADK), and security frameworks. Because it touches Sections 1, 3, and 5 of the exam guide, it acts as a foundational prerequisite and belongs in the Must Do bucket.  ̌
 Here is the complete roadmap categorized for your MCQ preparation, mapping the visible course titles to the exam guide sections.
 
 ### **1\. Must Do (Core Theory & Direct Exam Mapping)**
 
+Ordered by priority, see the tracker for the order.
+
 Focus entirely on these theoretical courses. They align directly with the heavy-weighted sections and specific tool mentions in the exam guide.
 
 * [**Understand Google Cloud Agents**](https://partner.skills.google/paths/4531/course_sessions/46768137/documents/689367): Foundational architecture covering multiple exam domains. \-**In Progress**  
-* [**Agentic Strategy: Discover, Design, and Prototype**](https://partner.skills.google/paths/4531/course_templates/1672): Core principles for workflow and state-based design. \-**Yet to Start**  
 * [**Optimize Agent Behavior**](https://partner.skills.google/paths/4531/course_templates/1564): Maps to Section 1.1 (prompting, few-shot, and chain-of-thought).- **Done**  
 * [**Build Agent Skills with Google**](https://partner.skills.google/paths/4531/course_templates/1832): Maps to Sections 2.2 and 3.1 (creating custom skills and tools).- **Done**  
 * [**AgentOps: Operationalize AI Agents on Google Cloud**](https://partner.skills.google/paths/4531/course_sessions/47201923/quizzes/686747): Maps to Section 4.2 (deploying, monitoring, and troubleshooting latency/loops). \-**Not Started**   
@@ -26,11 +27,12 @@ Review these if you need deeper context on specific subsystems, but they are low
 * [**Deploy Gemini to Transform Enterprises**](https://partner.skills.google/paths/4531/course_templates/1743): Likely covers broader business strategy rather than technical exam specifics.  
 * [**Secure Your Agents With Gemini Platform**](https://partner.skills.google/paths/4531/course_templates/1750): Supplemental to the Model Armor and Governance courses.  
 * [**Craft ADK Agents with Persistent Memories**](https://partner.skills.google/paths/4531/course_templates/1746): Maps to Section 3.1 (sessions and memory bank). At 7+ hours, it is too dense for purely MCQ prep; skim the core concepts.  
+* [**Agentic Strategy: Discover, Design, and Prototype**](https://partner.skills.google/paths/4531/course_templates/1672): Moved from Must Do: strategy-heavy, low direct exam overlap (mostly scenario context). Notes already exist; read only if time remains. \-**Yet to Start**    
 * [**Hill Climb Generative and Agentic Systems**](https://partner.skills.google/paths/4531/course_templates/1756): Advanced optimization concepts useful for Section 4.2 monitoring.
 
-### **3\. Can Skip (Hands-on Labs & Badges)**
+### **3\. Parked for Phase 2 (Hands-on Labs & Badges)**
 
-Since you are bypassing hands-on execution for now, skip all applied labs and skill badges. These test practical implementation rather than the architectural knowledge needed for the MCQ exam.
+Phase 1 is MCQ only: park all applied labs and skill badges until the MCQ is passed (they are needed for the lab part of the certification). These test practical implementation rather than the architectural knowledge needed for the MCQ exam.
 
 * [Engineer AI Agents with Agent Development Kit (ADK)](https://partner.skills.google/paths/4531/course_templates/1596)  
 * [Deploy Gemini with Workspace Data Sources and Model Armor](https://partner.skills.google/paths/4531/course_templates/1665)  
