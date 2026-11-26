@@ -20,9 +20,11 @@ The certification has two parts: a proctored MCQ exam, then hands-on labs on Goo
 - One folder per course module (named after the course):
   ```
   <Module Name>/
-  ├── sources/       raw.md (faithful capture), quiz.md, transcript.md, etc. Read-only inputs, never rewrite them
+  ├── sources/       raw.md (faithful capture), quiz.md, transcript.md, raw diagrams, etc. (gitignored; never rewrite text inputs)
   └── notes/         certification-ready notes, one concept-focused file per topic
+      └── diagrams/  relevant course diagrams moved from sources/ with clean kebab-case filenames
   ```
+- **Course diagrams/images:** Saved images in `sources/` often carry an auto-populated `M<module>_L<lecture>_<name>` prefix (e.g., `M2_L1_telemetry-dashboard.jpg`) indicating where they appeared. It is **not** mandatory to include every image: inspect them and use discretion—only move and embed diagrams that solidify or extend understanding of exam-relevant concepts. Skip decorative, purely operational, or low-value UI screenshots, and never add a note or extra section just to accommodate an image. For kept diagrams, move them into `notes/diagrams/` with clean kebab-case filenames (tracked in git while `sources/` stays gitignored) and embed via relative paths (`![Alt text](diagrams/<filename>)`).
 - Notes are **small, targeted files** (roughly one concept cluster each, split when a file gets long) rather than one big file per module. Name by topic with a **two-digit study-order prefix** that is ascending within the module, e.g. `notes/01-agentops-lifecycle.md`, `notes/02-build-and-scale-platform.md`. The number is the order I should read them in (prerequisites first), starting at `01` per module. Rules: (a) order by learning dependency, not by source order; (b) when adding a note to an existing module, give it the right slot and renumber the others if needed, updating every cross-reference, "Next notes" line, and the tracker; (c) never leave gaps or duplicate numbers; (d) a module overview/mindmap note, if any, is `01`. Existing unprefixed notes are renamed only when I ask or when that module is next revised.
 - Root files: `00-coverage-tracker.md`, `roadmap.md`, `exam-guide.md`.
 - If a note already exists, update it. Never create a duplicate.
@@ -46,7 +48,7 @@ Reorganize by concept; do not summarize in source order.
 2. Sections by concept (merge shallow or intro material into the relevant concept). Start each concept with a brief "what it is and why it exists".
 3. One-line **Takeaway** for each important concept.
 4. Tables for comparisons and "when to use X vs Y" decisions (the exam is scenario-based: include cost, security, latency, scale criteria).
-5. Text diagrams for flows, architectures, agent interactions and any new or complex concept.
+5. Text diagrams and embedded course diagrams (`![...](diagrams/...)`) for flows, architectures, agent interactions and any new or complex concept.
 6. Worked examples with explicit cross-checks (verify the example against the concept).
 7. **Common confusions** table at the end (look-alike services, protocols, terms).
 
